@@ -10,10 +10,24 @@ nav{
     bottom:  2rem; /* far from bottom 2 rem */
     display: flex;
     gap: 0.8rem; 
+    border-radius: 3rem; /* elips shape */
+    backdrop-filter:blur (15px); 
 
 }
-nav a{
+nav a{ 
+ 
     background: transparent;
-    padding: 0.8rem;
-    
+    padding: 0.9rem;
+    border-radius: 50%;
+    display: flex;
+    color:var(--color-light);
+    font-size: 1.5rem;
+
+}
+nav a:hover{/*  when the cursor is on the icon */
+    background: rgba(0, 0, 0, 0.3);
+}
+nav a.active{ /* Which is clicked*/
+    background: var(--color-bg);
+    color: rgb(229, 255, 0);
 }
