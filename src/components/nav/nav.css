@@ -1,0 +1,19 @@
+nav{
+    background: rgba(0, 0, 0, 0.3);
+    width: max-content;  /* fit is content  */
+    display: block;
+    padding: 0.7rem 1.7rem;
+    z-index: 2;
+    position: fixed; /* fix on the page no matter where in the page */
+    left: 50%;
+    transform: translateX(-50%); /* for middle of the page */
+    bottom:  2rem; /* far from bottom 2 rem */
+    display: flex;
+    gap: 0.8rem; 
+
+}
+nav a{
+    background: transparent;
+    padding: 0.8rem;
+    
+}
