@@ -27,11 +27,6 @@ const About = () => {
               <h5>Projects</h5>
               <small>3 projects has a live demo</small>
             </article>
-            <article className='about__card'>
-              <MdOutlineWork className='about__card__icon' />
-              <h5>Experience</h5>
-              <small>I have no experience now</small>
-            </article>
           </div>
           <p>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt sit soluta atque cumque obcaecati laboriosam,
