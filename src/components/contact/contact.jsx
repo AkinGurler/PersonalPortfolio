@@ -2,22 +2,40 @@ import React, { useState } from 'react'
 import './contact.css'
 import { AiOutlineMail } from 'react-icons/ai'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
+import { useRef } from 'react';
+import emailjs from 'emailjs-com'
+
 const CONTACT_DATA = [
   {
     type: "Email",
     contact: "akingurler.b@gmail.com",
     link: "mailto:akingurler.b@gmail.com",
-    icon: <AiOutlineMail />
+    icon: <AiOutlineMail className='contact__option-icon' />
   },
   {
     type: "WhatsApp",
     contact: "(553)-460-00-27",
     link: "http://api.whatsapp.com/send?phone=905534600027",
-    icon: <AiOutlineWhatsApp />
+    icon: <AiOutlineWhatsApp className='contact__option-icon' />
   }
 ]
 const Contact = () => {
   const [contactData, setContactData] = useState(CONTACT_DATA)
+  const form = useRef()
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_k4n468d', 'template_9oc8p9y', form.current, '9wuqriWg6CG7ZkU0Z')
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+      e.target.reset()
+  };
+
+
   return (
     <section id='contact'>
       <h5>Get in Touch</h5>
@@ -33,7 +51,7 @@ const Contact = () => {
             </article>
           ))}
         </div>
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name='name'
@@ -50,8 +68,8 @@ const Contact = () => {
             placeholder='Your Message'>
           </textarea>
           <button
-          type='submit'
-          className='btn btn primary'
+            type='submit'
+            className='btn btn-primary'
           >
             Send a Message
           </button>
