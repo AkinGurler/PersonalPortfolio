@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from './components/header/header'
-import Nav from './components/nav/nav'
-import Experience from './components/experience/experience'
-import About from './components/about/about'
+import Nav from './components/nav/Nav'
+import Experience from './components/experience/Experience'
+import About from './components/about/About'
 import Services from './components/services/services'
-import Portfolio from './components/portfolio/portfolio'
-import Testimonials from './components/testimonials/testimonials'
-import Contact from './components/contact/contact'
-import Footer from './components/footer/footer'
+import Portfolio from './components/portfolio/Portfolio'
+import Education from './components/education/Education'
+import Contact from './components/contact/Contact'
+import Footer from './components/footer/Footer'
 
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
       <Experience />
       <Services />
       <Portfolio />
-      <Testimonials />
+      <Education />
       <Contact />
       <Footer />
     </>
