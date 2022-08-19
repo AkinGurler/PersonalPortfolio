@@ -1,15 +1,20 @@
 .experience__container{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap:2rem;
+    grid-template-columns: repeat(3,1fr);
+    gap:2.5rem;
+    
+   
 }
-.experience__container>div{ /* for 2 part of div frontend and backend */
-    margin-top: 2rem;
+div.experience__frontend{
+    padding: 10rem;
+}
+ .experience__container>div{ 
+     margin-top: 2rem;
     background: var(--color-bg-variant);
-    padding: 2.4rem 5rem;
-    border-radius:  2rem;
-    border: 2px solid transparent;
-}
+    padding: 2rem 4rem;
+     border-radius:  2rem;
+    border: 2px solid transparent; 
+} 
 .experience__container>div:hover{
     background: transparent;
     border-color: var(--color-primary-variant);
@@ -25,18 +30,17 @@
 .experience__content{
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    text-align: center;
     gap: 0.5rem;
     
 }
-
+/*
 .experience__details{
     padding: 0.5rem;
     display: flex;
     gap: 1rem;
-    border: 1px solid;
-    border-color: var(--color-primary-variant);
-    border-radius: 2rem;
-    padding-left: 2rem;
+   
 }
 .experience__details:hover{
     background-color: black;
@@ -45,7 +49,7 @@
 .experience__details-icon{
    margin-top: 6px;
    color:var(--color-primary)
-}
+}   */
 
 /*----------------MEDIA QUERIES(MEDIUM DEVICES)------------*/
 @media screen and (max-width:1024px) {

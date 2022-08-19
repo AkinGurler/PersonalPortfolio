@@ -29,10 +29,12 @@ const About = () => {
             </article>
           </div>
           <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt sit soluta atque cumque obcaecati laboriosam,
-             commodi deserunt reprehenderit molestias, dolor, mollitia ut quidem id adipisci esse in accusamus reiciendis delectus?
+            Hello my name is Akın .I'm studying computer engineering at Istanbul University.
+            It is my last year.Currently, I am sharpening my programming skills.I'm working with React and also NodeJS
+            I'm focused on the front side right now.You can check my projects and contact me.
+
           </p>
-          <a href="#contact" className='btn btn-primary'>LETS TALK</a>
+          <a href="#contact" className='btn btn-primary'>Contact ME</a>
         </div>
       </div>
     </section>
