@@ -30,8 +30,8 @@ nav a:hover{/*  when the cursor is on the icon */
     background: rgba(168, 166, 166, 0.685);
 }
 nav a.active{ /* Which is clicked*/
-    background: var(--color-bg);
-    color: #3783b6;
+    background: var(--color-bg-variant);
+    color: var(--color-primary)
 }
 .button__definition{
     font-size: 80%;

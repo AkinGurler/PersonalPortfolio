@@ -47,7 +47,7 @@ const Education = () => {
                     <div className="education__result__container">
                         <div className="education__result__content">
                             <h3>High School<br /> Diploma</h3>
-                            <small className='text-light'>GPA=3.29</small>
+                            <small className='text-light'>Graduate</small>
                         </div>
                     </div>
                     </div>

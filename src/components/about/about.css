@@ -7,7 +7,7 @@
 
 .about__image {
 
-    width: 100%;
+    width: 80%;
     aspect-ratio: 1/1;
     /* height is going to match width */
     border-radius: 2rem;

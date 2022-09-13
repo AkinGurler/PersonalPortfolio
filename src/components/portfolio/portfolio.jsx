@@ -1,24 +1,27 @@
 import React, { useState } from 'react'
 import './portfolio.css'
-import image1 from '../../assets/portfolio1.jpg'
-import image2 from '../../assets/portfolio2.jpg'
-import image3 from '../../assets/portfolio3.jpg'
+import image1 from '../../assets/1.png'
+import image2 from '../../assets/Main-Page.png'
+import image3 from '../../assets/backgammon-main.png'
 
 const PROJECT_DATA = [
     {
-        img: image1, title: 'Web Fitness',
+        img: image1,
+        title: 'Web Fitness',
         github: "https://github.com/AkinGurler/WebFitness",
         livedemo: "https://fitnessclubdemo.netlify.app/"
     },
     {
-        img: image2, title: 'Web Fitness',
-        github: "https://github.com/AkinGurler/WebFitness",
-        livedemo: "https://fitnessclubdemo.netlify.app/"
+        img: image2,
+        title: 'Blog-City',
+        github: "https://github.com/AkinGurler/Blog",
+        livedemo: "https://blogcity-frontend.herokuapp.com/posts"
     },
     {
-        img: image3, title: 'Web Fitness',
-        github: "https://github.com/AkinGurler/WebFitness",
-        livedemo: "https://fitnessclubdemo.netlify.app/"
+        img: image3,
+        title: 'Backgammon',
+        github: "https://github.com/AkinGurler/Backgammon",
+        livedemo: ""
     }
 ]
 
