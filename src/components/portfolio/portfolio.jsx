@@ -47,7 +47,12 @@ const Portfolio = () => {
                 {projects.map((item, index) => (
                     <article key={index} className='portfolio__item'>
                         <div className="portfolio__item-image">
+                            {item.livedemo ? 
+                            <a href={item.livedemo} target="_blank" rel="noopener noreferrer">
                             <img src={item.img} alt="" />
+                            </a>:<img src={item.img} alt="" /> }
+                            
+                            
                         </div>
                         <h3>{item.title}</h3>
                         <div className="portfolio__item-cta">
