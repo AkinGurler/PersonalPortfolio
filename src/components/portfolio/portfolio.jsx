@@ -1,28 +1,38 @@
 import React, { useState } from 'react'
 import './portfolio.css'
-import image1 from '../../assets/1.png'
-import image2 from '../../assets/Main-Page.png'
-import image3 from '../../assets/backgammon-main.png'
+import webfitnessgif from '../../assets/web-fitness.gif'
+import bloggif from '../../assets/blog-gif.gif'
+import backgammonimg from '../../assets/backgammonimg.png'
+
+import tictactoegif from '../../assets/tic-tac-toe.gif'
 
 const PROJECT_DATA = [
     {
-        img: image1,
+        img: webfitnessgif,
         title: 'Web Fitness',
         github: "https://github.com/AkinGurler/WebFitness",
         livedemo: "https://fitnessclubdemo.netlify.app/"
     },
     {
-        img: image2,
+        img: bloggif,
         title: 'Blog-City',
         github: "https://github.com/AkinGurler/Blog",
         livedemo: "https://blogcity-frontend.herokuapp.com/posts"
     },
     {
-        img: image3,
+        img: backgammonimg,
         title: 'Backgammon',
         github: "https://github.com/AkinGurler/Backgammon",
         livedemo: ""
-    }
+    },
+    {
+        img: tictactoegif,
+        title: 'Tic-Tac-Toe-React',
+        github: "https://github.com/AkinGurler/Tic-Tac-Toe-React",
+        livedemo: "https://letsplay-tic-tac-toe.netlify.app/"
+    },
+   
+
 ]
 
 const Portfolio = () => {
@@ -42,7 +52,8 @@ const Portfolio = () => {
                         <h3>{item.title}</h3>
                         <div className="portfolio__item-cta">
                             <a href={item.github} className='btn'>Github</a>
-                            <a href={item.livedemo} className='btn btn-primary'>Live Demo</a>
+                            {item.livedemo && <a href={item.livedemo} className='btn btn-primary'>Live Demo</a> }
+                            
                         </div>
 
                     </article>

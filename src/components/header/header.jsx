@@ -1,7 +1,6 @@
 import React from 'react'
 import './header.css'
 import CTA from './CTA'
-import ME from '../../assets/mee2.png'
 import HeaderSocial from './HeaderSocial'
 
 const header = () => {
@@ -13,9 +12,7 @@ const header = () => {
         <h3 className='text-light'>Web Developer</h3>
         <CTA />
         <HeaderSocial/>
-        {/* <div className="me">
-          <img width={500} height={400} src={ME} alt="" />
-        </div> */}
+        
         <a href='#contact' className='scroll__down'>Scroll Down</a>
 
       </div> {/* bim specicyfing css */}
