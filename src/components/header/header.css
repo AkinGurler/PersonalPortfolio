@@ -1,5 +1,6 @@
 header{
     overflow: hidden;
+    margin-top: 2rem;
 }
 
 .header__container{
@@ -76,6 +77,9 @@ header{
 
 /*----------------MEDIA QUERIES(SMALL DEVICES)------------*/
 @media screen and (max-width:600px) {
+   
+   
+    
    
     .header__socials,
     .scroll__down{

@@ -6,12 +6,12 @@ nav{
     z-index: 2;
     position: fixed; /* fix on the page no matter where in the page */
     left: 50%;
-    transform: translateX(-50%); /* for middle of the page */
-    bottom:  1rem; /* far from bottom 2 rem */
+    transform: translateX(-50%) ; /* for middle of the page */
+    bottom:  2rem; /* far from bottom 2 rem */
     display: flex;
     gap: 0.8rem; 
     border-radius: 3rem; /* elips shape */
-    backdrop-filter:blur (15px); 
+    backdrop-filter: blur(15px);
 
 }
 nav a{ 
@@ -22,7 +22,7 @@ nav a{
     border-radius: 50%;
     display: flex;
     color:var(--color-light);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     
    
 }
@@ -33,8 +33,14 @@ nav a.active{ /* Which is clicked*/
     background: var(--color-bg-variant);
     color: var(--color-primary)
 }
-.button__definition{
-    font-size: 80%;
-    padding: 0.9rem;
-    padding-top: 0;
+ .button__definition{
+    text-align: center;
+    font-size: 60%;
+    padding: 0.2rem;
+     
+}  
+
+@media screen and (max-width:600px) {
+
+   
 }

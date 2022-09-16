@@ -23,7 +23,7 @@ const Nav = () => {
                     onClick={() => setActive('#about')}
                     className={active === '#about' ? 'active' : ''}
                 ><FaUser /></a>
-                <h5 className='button__definition'> About</h5>
+                <h5 className='button__definition'> About </h5>
             </div>
 
             <div className="navbar__button">
@@ -42,6 +42,7 @@ const Nav = () => {
 
                 <h5 className='button__definition'> Portfolio</h5>
             </div>
+           
 
             <div className="navbar__button">
                 <a href="#contact"

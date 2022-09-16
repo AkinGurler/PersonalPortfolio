@@ -4,9 +4,9 @@ h2{
 .education__container{
     
     display: grid;
-    grid-template-columns: 1fr 1fr ;
-    gap:2rem;
-    margin-left: 50%;
+    width: 60%;
+    grid-template-columns: 50% 38%;
+    gap: 12%;
     border: 1px transparent;
     background-color: var(--color-bg-variant);
     border-radius: 2rem;
@@ -41,6 +41,7 @@ h2{
   }
 
   .education__results{
+
     display: grid;
     grid-template-rows: 1fr 1fr;
     gap: 3rem;
@@ -66,21 +67,21 @@ h2{
   z-index: 1;
   }
 
+  /*----------------MEDIA QUERIES(MEDIUM DEVICES)------------*/
+@media screen and (max-width:1024px) {
+  .education__container{
+    width:95%;
+    grid-template-columns: 40% 60%;
+  
+   }
+}
 
   /*----------------MEDIA QUERIES(SMALL DEVICES)------------*/
   @media screen and (max-width:600px) {
-   .education__container>div{
-    width: 80%;
-    
-   }
-   .timeline{
-    left: 2rem;
-   }
-    .education__schools{
-       margin-left: 2rem;
-       font-size: small;
+    .education__container{
+      grid-template-columns: 50% 45%;
+      gap: 5%;
+      width: 85%;
     }
-    .education__results{
-        font-size: small;
-    }
+   
    }

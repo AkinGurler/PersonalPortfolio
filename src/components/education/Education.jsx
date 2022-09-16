@@ -20,6 +20,7 @@ const Education = () => {
 
     return (
         <section id='education' >
+            <h5>What I Learn</h5>
             <h2>My Education </h2>
             <div className="container education__container">
                 <div className="education__schools">
@@ -38,7 +39,7 @@ const Education = () => {
                     <div className="education__results">
                         <div className="education__result__container">
                         <div className="education__result__content">
-                            <h3>Undergraduate</h3>
+                            <h4>Under graduate</h4>
                             <small className='text-light'>GPA=3.29</small>
                         </div>
                     </div>
@@ -46,7 +47,7 @@ const Education = () => {
 
                     <div className="education__result__container">
                         <div className="education__result__content">
-                            <h3>High School<br /> Diploma</h3>
+                            <h4>High School<br /> Diploma</h4>
                             <small className='text-light'>Graduate</small>
                         </div>
                     </div>

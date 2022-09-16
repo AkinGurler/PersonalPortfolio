@@ -14,7 +14,7 @@ const CONTACT_DATA = [
   },
   {
     type: "WhatsApp",
-    contact: "(553)-460-00-27",
+    contact: "+90 (553)-460-00-27",
     link: "http://api.whatsapp.com/send?phone=905534600027",
     icon: <AiOutlineWhatsApp className='contact__option-icon' />
   }
@@ -32,7 +32,7 @@ const Contact = () => {
       }, (error) => {
         console.log(error.text);
       });
-      e.target.reset()
+    e.target.reset()
   };
 
 
