@@ -1,3 +1,3 @@
-# Personal Portfolio Website
+# Personal Website
 
 [akingurler.com](https://www.akingurler.com/)
