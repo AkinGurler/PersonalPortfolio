@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './experience.css'
+import './experience.scss'
 import { GiProgression } from 'react-icons/gi'
 
 

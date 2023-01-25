@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './contact.css'
+import './contact.scss'
 import { AiOutlineMail } from 'react-icons/ai'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 import { useRef } from 'react';

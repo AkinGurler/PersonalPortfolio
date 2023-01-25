@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './nav.css'
+import './nav.scss'
 import { FaHome } from 'react-icons/fa'
 import { FaUser } from 'react-icons/fa'
 import { FaLaptopCode } from 'react-icons/fa'

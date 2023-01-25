@@ -1,31 +1,34 @@
-header{
+@import "../../variable.scss";
+@import "../../functions.scss";
+
+header {
     overflow: hidden;
     margin-top: 2rem;
 }
 
-.header__container{
+.header__container {
     text-align: center;
     /* height: 100%; */
     position: relative;
 }
-.header__container h2{
+
+.header__container h2 {
     margin-bottom: 0;
 }
+
 /* -----------CTA------------- */
-.cta{
+.cta {
     margin-top: 2.5rem;
     display: flex;
-    gap:1.2rem;
+    gap: 1.2rem;
     justify-content: center;
 }
 
 /*----------------------------HEADER SOCIALS------------------- */
 
-.header__socials{
+.header__socials {
     font-size: 3rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+    @include flex(row,center);
     gap: 0.5rem;
     position: absolute;
     left: 0;
@@ -45,44 +48,43 @@ header{
     background: var(--color-primary);
 } */
 /* ---------------------------------IMAGE(ME)-------------- */
-.me{
-    background: linear-gradient(var(--color-primary),transparent);
+.me {
+    background: linear-gradient($--color-primary, transparent);
     width: 22rem;
     height: 30rem;
     position: absolute;
     left: calc(50% - 11rem);
-    margin-top: 4rem; 
-    border-radius: 1rem ;
+    margin-top: 4rem;
+    border-radius: 1rem;
     overflow: hidden;
     /* padding: 2rem 1.5rem 1.5rem 1.5rem; */
-    
-    
+
+
 }
-/* --------------------------------SCROLL DOWN-------------- */
-.scroll__down{
+
+/* --------------------SCROLL DOWN-------------- */
+.scroll__down {
     position: absolute;
     right: -1rem;
     bottom: 5rem;
     transform: rotate(90deg);
-    
+
     font-weight: 300;
     font-size: 1rem;
 
 }
 
 /*----------------MEDIA QUERIES(MEDIUM DEVICES)------------*/
-@media screen and (max-width:1024px) {
-  
-}
+@media screen and (max-width:1024px) {}
 
 /*----------------MEDIA QUERIES(SMALL DEVICES)------------*/
 @media screen and (max-width:600px) {
-   
-   
-    
-   
+
+
+
+
     .header__socials,
-    .scroll__down{
+    .scroll__down {
         display: none;
     }
 }

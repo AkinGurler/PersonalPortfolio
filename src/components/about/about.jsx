@@ -1,5 +1,5 @@
 import React from 'react'
-import './about.css'
+import './about.scss'
 import ME from "../../assets/ppq.jpeg"
 /* import { MdOutlineWork } from 'react-icons/md'
 import { AiOutlineFileDone } from 'react-icons/ai' */

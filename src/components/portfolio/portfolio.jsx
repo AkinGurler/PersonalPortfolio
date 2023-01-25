@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import './portfolio.css'
+import './portfolio.scss'
 import webfitnessgif from '../../assets/web-fitness.gif'
 import bloggif from '../../assets/blog-gif.gif'
 import backgammonimg from '../../assets/backgammonimg.png'
